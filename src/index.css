@@ -72,8 +72,17 @@ code {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-left: 5px;
+}
+.date-input {
+  width: calc(50% - 2.5px);
+  margin-right: 2.5px;
 }
 
+.description-input {
+  width: calc(50% - 2.5px);
+  margin-left: 2.5px; 
+}
 .submit-button {
   
   padding: 10px 20px;
