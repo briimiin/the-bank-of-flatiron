@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
 
 const AddTransactionForm = ({ onSubmit }) => {
   const [date, setDate] = useState('');
@@ -21,11 +19,11 @@ const AddTransactionForm = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit} className='transaction-form'>
       <div className='input'>
-        <DatePicker
-          selected={date}
-          onChange={(date) => setDate(date)}
-          dateFormat="yyyy-MM-dd"
-          placeholderText="Date"
+        <input
+          type="date"
+          placeholder="Date"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
           className="form-input date-input"
         />
         <input
